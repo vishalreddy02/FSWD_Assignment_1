@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Students</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Search Students</h1></header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="eligibility-list.html">Eligibility List</a></li>
+            <li><a href="view-students.html">View Students</a></li>
+            <li><a href="search-students.html">Search Students</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form id="searchForm">
+            <label for="rollNumber">Enter Roll Number:</label>
+            <input type="text" id="rollNumber" required>
+            <button type="submit">Search</button>
+        </form>
+        <div id="searchResults"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
