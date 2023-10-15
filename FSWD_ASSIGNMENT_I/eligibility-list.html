@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eligibility List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Eligibility List</h1></header>
+    <nav>
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="eligibility-list.html">Eligibility List</a></li>
+          <li><a href="view-students.html">View Students</a></li>
+          <li><a href="search-students.html">Search Students</a></li>
+        </ul>
+      </nav>
+    <main>
+        <label for="minimumCgpa">Minimum CGPA:</label>
+        <input type="number" step="0.01" id="minimumCgpa" required>
+        <button onclick="checkEligibility()">Check Eligibility</button>
+        <div id="eligibleStudentsContainer"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
